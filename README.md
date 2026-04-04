@@ -28,12 +28,14 @@ python run_experiments.py -a 1 3 4 -s 100 500 1000 3000 -e 1 -r 20
 
 ## result1.png
 
-![result1](result1.png)
+<img width="1500" height="900" alt="figure1" src="https://github.com/user-attachments/assets/ed90f1b7-00fa-4da5-ab00-eb01d5d05a1d" />
+
 
 **Explanation:** On random integers, bubble sort and insertion sort show much faster growth of running time with *n* than merge sort, consistent with quadratic versus *n* log *n* behavior. Merge sort stays the lowest curve for larger sizes.
 
 ## result2.png
+<img width="1500" height="900" alt="figure2" src="https://github.com/user-attachments/assets/94f3c928-a770-4a08-8402-481bd1865f00" />
 
-![result2](result2.png)
+
 
 **Explanation:** With ~5% random swaps on an otherwise sorted array, **insertion sort** usually becomes faster relative to the random case, because it stops after few comparisons when each element is already close to its place. **Bubble sort** may improve somewhat but still does many passes. **Merge sort** changes less in shape than insertion, because it always does full divide-and-merge work. Compared to Figure 1, insertion typically drops the most; merge stays similar in ranking (fastest here at larger *n*).
